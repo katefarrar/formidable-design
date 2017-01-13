@@ -1,1 +1,3 @@
 # formidable-design
+
+## Basic Info
