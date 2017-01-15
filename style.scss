@@ -1,5 +1,6 @@
 $light-grey: #d4d4d6;
 $dark-grey: #484848;
+$black: #2b2b2b;
 $white: #fff;
 
 .clearfix:before,
@@ -20,6 +21,8 @@ html {
 body {
 	background: $light-grey;
 	color: $dark-grey;
+	font-family: 'Inconsolata', monospace;
+	font-weight: 700;
 }
 
 
@@ -35,6 +38,7 @@ nav ul {
 		list-style-type: none;
 		height: 60px;
 		margin-right: 40px;
+		position: relative;
 		width: 160px;
 
 		&.active {
@@ -47,9 +51,13 @@ nav ul {
 		}
 
 		&:last-child {
-			background-color: $dark-grey;
+			background-color: $black;
 			color: $white;
 			margin-right: 0;
+
+			&:hover {
+				box-shadow: none;
+			}
 		}
 
 		&:hover {
@@ -72,6 +80,36 @@ h1, h2 {
 	text-align: center;
 }
 
+h1 {
+	margin-bottom: 0;
+}
+
+h2 {
+	margin-top: 5px;
+	font-size: 18px;
+}
+
+p {
+	font-size: 18px;
+	line-height: 150%;
+}
+
 .upper {
 	text-transform: uppercase;
+}
+
+.v-align {
+	display: block;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+	section {
+		padding: 40px;
+	}
 }
