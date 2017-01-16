@@ -1,21 +1,8 @@
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
-
-.clearfix {
-  *zoom: 1; }
-
-html {
-  -webkit-font-smoothing: antialiased; }
-
 body {
   background: #d4d4d6;
   color: #484848;
   font-family: 'Inconsolata', monospace;
+  -webkit-font-smoothing: antialiased;
   font-weight: 700; }
 
 nav input, label {
@@ -81,6 +68,17 @@ p {
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   width: 100%; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
 
 @media only screen and (max-width: 1200px) {
   nav ul a {
