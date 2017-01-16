@@ -1,6 +1,5 @@
 # formidable-design
 
-## Notes
 View project here: [https://katefarrar.github.io/formidable-design/](https://katefarrar.github.io/formidable-design/)
 <br/>
 Included the SCSS file for reference
