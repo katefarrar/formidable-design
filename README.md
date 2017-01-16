@@ -1,4 +1,4 @@
-# formidable-design
+# formidable design exercise
 
 View project here: [https://katefarrar.github.io/formidable-design/](https://katefarrar.github.io/formidable-design/)
 <br/>
