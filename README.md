@@ -9,6 +9,5 @@ and [http-server](https://www.npmjs.com/package/http-server) for local developme
 
 ## Resources
 [Normalize.css](https://necolas.github.io/normalize.css/)
-
-
+<br/>
 [Animate.css](https://daneden.github.io/animate.css/)
