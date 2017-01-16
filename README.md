@@ -1,7 +1,9 @@
 # formidable-design
 
 ## Notes
-Attaching the SCSS file as well as the compliled CSS
+View project here: [https://katefarrar.github.io/formidable-design/](https://katefarrar.github.io/formidable-design/)
+<br/>
+Included the SCSS file for reference
 
 ## Info
 Built using [LiveReload](http://livereload.com/) to compile SCSS 
