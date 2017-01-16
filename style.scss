@@ -134,9 +134,13 @@ p {
 	nav label {
 		display: block;
 		font-size: 26px;
-		padding-top: 20px;
+		padding: 20px 0;
 		text-align: center;
 		text-transform: uppercase;
+	}
+
+	nav ul {
+		margin-top: 0;
 	}
 
 	nav ul a {
@@ -156,6 +160,7 @@ p {
 
 	#menu {
 	  display: none;
+	  margin-bottom: 0;
 	}
 
 	#menu-toggle:checked + #menu {
@@ -163,7 +168,7 @@ p {
 	}
 
 	.container {
-		margin: 20px auto;
+		margin: 0 auto;
 		padding-top: 20px;
 	}
 }
