@@ -22,39 +22,45 @@ nav ul {
 	margin-top: 35px;
 	padding-left: 0;
 
-	a {
-		background-color: $white;
-		color: $dark-grey;
+	li {
 		display: inline-block;
-		list-style-type: none;
-		height: 60px;
-		margin-right: 40px;
-		position: relative;
-		width: 160px;
+		list-style-type: none;	
 
-		&.active {
+		a {
+			background-color: $white;
+			display: inline-block;
+			color: $dark-grey;
+			height: 60px;
+			margin-right: 40px;
+			position: relative;
+			width: 160px;
+
+			&.active {
 			background-color: $light-grey;
 			border-top: 5px solid $dark-grey;
 
+				&:hover {
+					box-shadow: none;
+				}
+			}
+
+			&.cta {
+				background-color: $black;
+				color: $white;
+				margin-right: 0;
+
+				&:hover {
+					box-shadow: none;
+				}
+			}
+
 			&:hover {
-				box-shadow: none;
+				box-shadow: 5px 5px 0px 0px $dark-grey;
 			}
 		}
 
-		&:last-child {
-			background-color: $black;
-			color: $white;
-			margin-right: 0;
-
-			&:hover {
-				box-shadow: none;
-			}
-		}
-
-		&:hover {
-			box-shadow: 5px 5px 0px 0px $dark-grey;
-		}
 	}
+
 }
 
 .container {
@@ -111,14 +117,14 @@ p {
   *zoom: 1; }
 
 @media only screen and (max-width: 1200px) {
-	nav ul a {
+	nav ul li a {
 		margin-right: 20px;
 		width: 120px;
 	}
 }
 
 @media only screen and (max-width: 900px) {
-	nav ul a {
+	nav ul li a {
 		margin-right: 5px;
 	}
 
@@ -140,10 +146,17 @@ p {
 		margin-top: 0;
 	}
 
-	nav ul a {
+	nav ul li {
 		display: block;
+	}
+
+	nav ul li a {
 		text-align: center;
 		width: 100%;
+
+		&:hover {
+			 box-shadow: none;
+		}
 	}
 
 	#menu-toggle {

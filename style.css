@@ -12,28 +12,30 @@ nav ul {
   text-align: center;
   margin-top: 35px;
   padding-left: 0; }
-  nav ul a {
-    background-color: white;
-    color: #484848;
+  nav ul li {
     display: inline-block;
-    list-style-type: none;
-    height: 60px;
-    margin-right: 40px;
-    position: relative;
-    width: 160px; }
-    nav ul a.active {
-      background-color: #d4d4d6;
-      border-top: 5px solid #484848; }
-      nav ul a.active:hover {
-        box-shadow: none; }
-    nav ul a:last-child {
-      background-color: #2b2b2b;
-      color: white;
-      margin-right: 0; }
-      nav ul a:last-child:hover {
-        box-shadow: none; }
-    nav ul a:hover {
-      box-shadow: 5px 5px 0px 0px #484848; }
+    list-style-type: none; }
+    nav ul li a {
+      background-color: white;
+      display: inline-block;
+      color: #484848;
+      height: 60px;
+      margin-right: 40px;
+      position: relative;
+      width: 160px; }
+      nav ul li a.active {
+        background-color: #d4d4d6;
+        border-top: 5px solid #484848; }
+        nav ul li a.active:hover {
+          box-shadow: none; }
+      nav ul li a.cta {
+        background-color: #2b2b2b;
+        color: white;
+        margin-right: 0; }
+        nav ul li a.cta:hover {
+          box-shadow: none; }
+      nav ul li a:hover {
+        box-shadow: 5px 5px 0px 0px #484848; }
 
 .container {
   margin: 40px auto;
@@ -81,11 +83,11 @@ p {
   *zoom: 1; }
 
 @media only screen and (max-width: 1200px) {
-  nav ul a {
+  nav ul li a {
     margin-right: 20px;
     width: 120px; } }
 @media only screen and (max-width: 900px) {
-  nav ul a {
+  nav ul li a {
     margin-right: 5px; }
 
   section {
@@ -101,10 +103,14 @@ p {
   nav ul {
     margin-top: 0; }
 
-  nav ul a {
-    display: block;
+  nav ul li {
+    display: block; }
+
+  nav ul li a {
     text-align: center;
     width: 100%; }
+    nav ul li a:hover {
+      box-shadow: none; }
 
   #menu-toggle {
     display: none; }
